@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\userauth;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -22,4 +23,5 @@ Route::view('/cart','cart');
 Route::view('/productDetail','productDetail');    
 Route::view('/','adminBase');
 Route::view('/login','login');    
+Route::post('/login_page',[userauth::class,'loginData']);
 

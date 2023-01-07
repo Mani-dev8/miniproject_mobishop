@@ -26,7 +26,7 @@
                     <h1 class=" text-gray-400 xl:text-lg  "><span class="font-semibold xl:text-2xl text-xl mr-2 text-gray-800 dark:text-white">Flip</span>phone
                         <h1 class="font-semibold xl:text-2xl text-xl mr-2 text-gray-800 dark:text-white ">Best Camera</h1>
                         <button type="submit " class=" text-blue-500 hover:text-blue-300 mt-1 hover:underline ">
-                            Shop now 👉 
+                            Shop now >
                         </button>
                 </div>
             </div>

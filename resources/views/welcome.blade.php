@@ -292,7 +292,12 @@
                                 </svg>
                             </div>
                             <div class="block">
-                                <h1 class=" font-thin dark:text-white text-xs lg:text-xs">Hello Sign In</h1>
+                                <h1 class=" font-thin dark:text-white text-xs lg:text-xs">Hello @if(session('umail') )
+                                    {{explode('@',session('umail'))[0]}}
+                                    @else
+                                    {{"Sign In"}}
+                                    @endif
+                                </h1>
                                 <h1 class=" dark:text-white text-xs font-bold lg:text-xs">My Account</h1>
                             </div>
                         </div>

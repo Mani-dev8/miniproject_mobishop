@@ -97,12 +97,12 @@
                     <h1 class="text-sm text-zinc-400">
                         enter your email and password
                     </h1>
-                    <form action="" method="post" enctype="multipart/form-data ">
-
+                    <form action="/login_page" method="POST" enctype="multipart/form-data ">
+                        @csrf
                         <div class="h-fit w-4/5 relative mt-8 flex">
                             <i class="fa-solid fa-envelope text-zinc-500 text-xl my-auto mr-4"></i>
                             <div class="w-4/5 h-fit relative">
-                                <input type="email" name="email" class="text-black border text-sm h-7 border-zinc-400 rounded-sm pl-2 w-full" required>
+                                <input type="email" name="login_email" class="text-black border text-sm h-7 border-zinc-400 rounded-sm pl-2 w-full" required>
                                 <input type="radio" name="" class="w-full absolute h-7 left-0 peer checked:-z-10 z-20 opacity-0">
                                 <h1 class="text-sm peer-checked:text-zinc-500 peer-checked:z-10 -z-10   peer-checked:bg-white text-transparent p-0 -my-1 ml-2 -pb-0.5 peer-checked:-top-2 absolute top-1.5 text-zinc-500 peer-checked:transition-all delay-200 ">
                                     email
@@ -119,7 +119,7 @@
                                 <input type="radio" id="" name="" class="w-full absolute h-7  left-0 peer/pass checked:-z-10 z-20 opacity-">
                                 <div class="flex w-full border border-zinc-400 rounded-sm items-center relative">
                                     <input type="checkbox" name="" class="show_pass absolute right-0 peer/show z-20 opacity-0 h-6 w-6">
-                                    <input type="password" name="email" class="pass text-black text-sm h-7  pl-2 " required>
+                                    <input type="password" name="login_password" class="pass text-black text-sm h-7  pl-2 " required>
                                     <i class="fa-solid fa-eye text-zinc-500 peer-checked/show:opacity-0 absolute right-0 mr-2"></i>
                                     <i class="fa-solid fa-eye-slash opacity-0 absolute right-0 text-zinc-500 peer-checked/show:opacity-100 mr-2"></i>
                                 </div>
